@@ -51,7 +51,7 @@ const App = () => {
 				<button type="submit">Search</button>
 			</form>
 			<User
-				name={user.name}
+				name={user['name']}
 				followers={user['followers']}
 				account={user['html_url']}
 				image={user['avatar_url']}
