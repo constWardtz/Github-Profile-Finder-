@@ -8,6 +8,7 @@
 
 .User .img img {
 	width: 400px;
+	border-radius: 200%;
 }
 
 .User .info {

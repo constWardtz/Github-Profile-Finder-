@@ -6,10 +6,12 @@ import '../css/User.css';
 
 const User = (user) => {
 	const { name, followers, account, image, reposCount } = user;
+	const img = require('../assets/images/Octocat.png');
+
 	return (
 		<div className="User">
 			<div className="img">
-				<img src={image} alt="User picture" />
+				<img src={image} />
 			</div>
 			<div className="info">
 				<h5>Name: {name}</h5>
