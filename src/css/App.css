@@ -29,6 +29,7 @@ body {
 	padding: 20px;
 	position: absolute;
 	top: 0;
+	z-index: 2;
 }
 
 .App .form h1 {
