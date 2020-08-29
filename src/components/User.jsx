@@ -11,7 +11,9 @@ const User = (user) => {
 	return (
 		<div className="User">
 			<div className="img">
-				<img src={image} />
+				<a href={account} target="_blank">
+					<img src={image} />
+				</a>
 			</div>
 			<div className="info">
 				<h5>Name: {name}</h5>

@@ -9,6 +9,7 @@
 .User .img img {
 	width: 400px;
 	border-radius: 200%;
+	cursor: pointer;
 }
 
 .User .info {
