@@ -1,0 +1,83 @@
+* {
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+:root {
+	--main-light-color: rgb(189, 202, 226);
+	--main-blue-color: rgb(24, 93, 197);
+	--main-white-color: rgb(232, 235, 240);
+}
+body {
+	background: var(--main-light-color);
+}
+
+.App {
+	height: 100vh;
+
+	/* Layout */
+	display: grid;
+	place-items: center;
+}
+
+.App .form {
+	background: var(--main-blue-color);
+	width: 100%;
+	text-align: center;
+	padding: 20px;
+	position: absolute;
+	top: 0;
+}
+
+.App .form h1 {
+	color: var(--main-white-color);
+	margin-bottom: 10px;
+}
+
+.App .form input {
+	padding: 15px;
+	border: 1px var(--main-white-color) solid;
+	border-top-left-radius: 20px;
+	border-bottom-left-radius: 20px;
+	width: 250px;
+	background: none;
+	color: var(--main-white-color);
+	text-align: center;
+	font-size: 1rem;
+}
+.App .form button {
+	padding: 18px;
+	border: none;
+	position: relative;
+	top: -1.3px;
+	width: 90px;
+	border-top-right-radius: 20px;
+	border-bottom-right-radius: 20px;
+	background: var(--main-light-color);
+	color: var(--main-blue-color);
+	cursor: pointer;
+}
+
+.App .form button:hover {
+	background: var(--main-white-color);
+	color: var(--main-blue-color);
+}
+
+@media screen and (max-width: 577px) {
+	.App .form {
+		display: grid;
+		place-items: center;
+	}
+	.App .form input {
+		border: 1px var(--main-white-color) solid;
+		border-radius: 10px;
+	}
+	.App .form button {
+		border-radius: 10px;
+		margin-top: 4px;
+		width: 250px;
+		padding: 15px;
+	}
+}
