@@ -14,7 +14,7 @@ body {
 	background: var(--main-light-color);
 }
 
-.App {
+.ProfileFinder {
 	height: 100vh;
 
 	/* Layout */
@@ -22,7 +22,7 @@ body {
 	place-items: center;
 }
 
-.App .form {
+.ProfileFinder .form {
 	background: var(--main-blue-color);
 	width: 100%;
 	text-align: center;
@@ -32,12 +32,12 @@ body {
 	z-index: 2;
 }
 
-.App .form h1 {
+.ProfileFinder .form h1 {
 	color: var(--main-white-color);
 	margin-bottom: 10px;
 }
 
-.App .form input {
+.ProfileFinder .form input {
 	padding: 15px;
 	border: 1px var(--main-white-color) solid;
 	border-top-left-radius: 20px;
@@ -48,7 +48,7 @@ body {
 	text-align: center;
 	font-size: 1rem;
 }
-.App .form button {
+.ProfileFinder .form button {
 	padding: 18px;
 	border: none;
 	position: relative;
@@ -61,21 +61,21 @@ body {
 	cursor: pointer;
 }
 
-.App .form button:hover {
+.ProfileFinder .form button:hover {
 	background: var(--main-white-color);
 	color: var(--main-blue-color);
 }
 
 @media screen and (max-width: 577px) {
-	.App .form {
+	.ProfileFinder .form {
 		display: grid;
 		place-items: center;
 	}
-	.App .form input {
+	.ProfileFinder .form input {
 		border: 1px var(--main-white-color) solid;
 		border-radius: 10px;
 	}
-	.App .form button {
+	.ProfileFinder .form button {
 		border-radius: 10px;
 		margin-top: 4px;
 		width: 250px;
