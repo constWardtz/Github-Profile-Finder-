@@ -1,12 +1,12 @@
-import React, { useState, useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 
 /* Components */
-import User from './components/User';
+import User from './User';
 
 /* Styles */
-import './css/App.css';
+import '../css/App.css';
 
-const App = () => {
+const UserEntry = () => {
 	const [ user, setUser ] = useState([]);
 	const [ search, setSearch ] = useState('');
 	const [ query, setQuery ] = useState('constWardtz');
@@ -51,6 +51,7 @@ const App = () => {
 				/>
 				<button type="submit">Search</button>
 			</form>
+			<UserEntry />
 			<User
 				name={user['name']}
 				followers={user['followers']}
@@ -62,4 +63,4 @@ const App = () => {
 	);
 };
 
-export default App;
+export default UserEntry;
